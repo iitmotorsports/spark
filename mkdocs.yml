@@ -14,8 +14,7 @@ nav:
     - Home: index.md
 theme:
   name: 'material'
-  logo: assets/iit-white.png
-  favicon: images/favicon.png
+  favicon: assets/favicon.png
   features:
     - toc.integrate 
 extra_css:

@@ -7,5 +7,7 @@ nav:
     - Home: index.md
 theme:
   name: 'material'
+  features:
+    - toc.integrate 
 extra_css:
     - stylesheets/extra.css

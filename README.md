@@ -1,10 +1,17 @@
-# lightning
-A set of onboarding documentation for electrical standards. Zap zap lightning.
+<div align="center">
 
-| Type  | Name | Color |
-| ------------- | ------------- | ------------- |
-| Serial  | CanBus (Twisted Pair) | #00ff0c #ffea00 |
-| Power  | TSV + / -  | #FFA500  |
-| Power  | GLV +  | #FF0000 |
-| Power  | GLV -  | #000000 |
-| Power  | GLV -  | #000000 |
+# spark
+
+<p>
+  <b>The electrical standards and practices for our formula hybrid vehicles.</b>
+  <br/>
+  <a href="https://github.com/iitmotorsports/spark"><strong>Read the⚡Spark Book⚡»</strong></a>
+  <br/><br/>
+</p>
+
+[![](https://img.shields.io/github/license/iitmotorsports/crust)](https://github.com/iitmotorsports/crust/blob/main/LICENSE)
+</div>
+
+## License
+
+Distributed under the MIT License. See `LICENSE`

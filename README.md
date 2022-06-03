@@ -5,7 +5,7 @@
 <p>
   <b>The electrical standards and practices for our formula hybrid vehicles.</b>
   <br/>
-  <a href="https://github.com/iitmotorsports/spark"><strong>Read the⚡Spark Book⚡»</strong></a>
+  <a href="https://spark.docs.iitmotorsports.org"><strong>Read the⚡Spark Book⚡»</strong></a>
   <br/><br/>
 </p>
 

@@ -9,7 +9,7 @@
   <br/><br/>
 </p>
 
-[![](https://img.shields.io/github/license/iitmotorsports/crust)](https://github.com/iitmotorsports/crust/blob/main/LICENSE)
+[![](https://img.shields.io/github/license/iitmotorsports/spark)](https://github.com/iitmotorsports/spark/blob/main/LICENSE)
 </div>
 
 ## License

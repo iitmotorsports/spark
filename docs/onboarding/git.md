@@ -11,6 +11,12 @@ If you already have a GitHub account, please skip to [thing]().
 !!! tip
     You will likely continue to use a GitHub account after graduation as a portfolio or in the industry. We recommend the use of a personal email and an appropriate username as this account will be public.
 
+## Apply for a GitHub student license
+
+As a university student, you get access to a ton of solid software resources. The GitHub Student Developer pack includes industry-standard tools for free. We use many of these tools in development for IIT Motorsports.
+
+If you are interested, you can apply for the education pack here: https://education.github.com/pack.
+
 ## Join the IIT Motorsports Organization
 
 We work out of the [IIT Motorsports Organization](https://github.com/iitmotorsports) to keep our repositories organized. It's crucial that you have access to this organization in order to utilize elctrical and software resources.

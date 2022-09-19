@@ -15,7 +15,7 @@ If you already have a GitHub account, please skip to [thing]().
 
 As a university student, you get access to a ton of solid software resources. The GitHub Student Developer pack includes industry-standard tools for free. We use many of these tools in development for IIT Motorsports.
 
-If you are interested, you can apply for the education pack here: https://education.github.com/pack.
+If you are interested, you can apply for the education pack here: [https://education.github.com/pack](https://education.github.com/pack).
 
 ## Join the IIT Motorsports Organization
 

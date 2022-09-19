@@ -13,12 +13,16 @@ extra:
 nav:
     - Home: index.md
     - Onboarding:
+      - onboarding/index.md
       - Git: onboarding/git.md
+    - Resources:
+      - Formula Hybrid Rules: https://drive.google.com/file/d/1qqfPue71dBHfSWaDCWYXdfh6THUAw-8l/view
 theme:
   name: 'material'
   favicon: assets/favicon.png
   features:
     - toc.integrate 
+    - navigation.indexes 
   palette: 
     primary: red
     scheme: slate
@@ -26,8 +30,10 @@ extra_css:
     - stylesheets/extra.css
 markdown_extensions:
   - admonition
+  - tables
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
   - pymdownx.tabbed:
       alternate_style: true 
 

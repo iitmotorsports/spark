@@ -4,9 +4,9 @@ Git is a free and open source software tool used for version control.
 
 ## Create a GitHub Account
 
-If you already have a GitHub account, please skip to [thing]().
+If you already have a GitHub account, please skip to [Apply for a Student Developer Pack](#apply-for-a-github-student-license).
 
-**Navigate to the [GitHub Signup](https://github.com/signup) to create an account.**
+[Create a GitHub Account](https://github.com/signup){ .md-button target=_blank }
 
 !!! tip
     You will likely continue to use a GitHub account after graduation as a portfolio or in the industry. We recommend the use of a personal email and an appropriate username as this account will be public.
@@ -15,7 +15,7 @@ If you already have a GitHub account, please skip to [thing]().
 
 As a university student, you get access to a ton of solid software resources. The GitHub Student Developer pack includes industry-standard tools for free. We use many of these tools in development for IIT Motorsports.
 
-If you are interested, you can apply for the education pack here: [https://education.github.com/pack](https://education.github.com/pack).
+[Apply for a Student Developer Pack](https://education.github.com/pack){ .md-button target=_blank }
 
 ## Join the IIT Motorsports Organization
 

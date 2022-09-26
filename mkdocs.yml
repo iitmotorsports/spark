@@ -16,6 +16,7 @@ nav:
       - onboarding/index.md
       - Git: onboarding/git.md
       - Terminology: onboarding/terminology.md
+      - Tasks: onboarding/tasks.md
     - Resources:
       - Formula Hybrid Rules: https://drive.google.com/file/d/1qqfPue71dBHfSWaDCWYXdfh6THUAw-8l/view
 theme:

@@ -24,6 +24,7 @@ nav:
         - 3.3V to 5V Analog Scale: circuits/3.3_5_scale.md
     - Resources:
       - Formula Hybrid Rules: https://drive.google.com/file/d/1qqfPue71dBHfSWaDCWYXdfh6THUAw-8l/view
+      - Formula Electric Rules: https://drive.google.com/file/d/1JXlojLxfPoChLREt0dhdBYNLLnxnM2-f/view
 theme:
   name: 'material'
   favicon: assets/favicon.png

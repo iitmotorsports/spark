@@ -43,11 +43,11 @@ Our components are split up into the following categories:
 
 ## Install Component Helpers
 
-We get the majority of our components from the Altium Component Library. We use alternate component libraries when the part is not in the altium library.
+We get the majority of our components from the Manufacturer Part Search (formerly Altium Content Vault). We use alternate component libraries when the part is not in the altium vault.
 
 We use the following methods to retrieve components for Altium:
 
-* Altium Component Library (Recommended)
+* Manufacturer Part Search (Recommended)
 * [SnapEDA](https://snapeda.com)
 * [Ultra Librarian](https://www.ultralibrarian.com)
 
@@ -75,8 +75,8 @@ In order to find components, we use the following method:
 
 The components panel represents all components that we've used and uploaded to our Altium 365 instance. This should be the first place you check for components. Any component that is created must be added to the components bin in order to be properly synced and used for all projects.
 
-* Make sure that the IIT Motorsports Fusion 365 instance is active by clicking the cloud icon in the upper-right hand corner.
-* Ensure that the box above the search bar is set to `All` which will automatically pull components from the Fusion 365 instance.
+* Make sure that the IIT Motorsports Altium 365 instance is active by clicking the cloud icon in the upper-right hand corner.
+* Ensure that the box above the search bar is set to `All` which will automatically pull components from the Altium 365 instance.
 
 ![](/assets/onboarding/altium/library_management/components_panel.png)
 
@@ -109,7 +109,7 @@ Here's the following steps to import a component. We will be using a [Rohm Semic
 5. The Manufacturer Part Search will automatically fill out all of the necessary information. Unless any further changes are necessary, the component is ready to be uploaded. Right-Click the upper tab and click save, or use ++ctrl+s++. This will only save the component locally, **and not to the cloud**.
 ![](/assets/onboarding/altium/library_management/mps_save.png)
 
-6. The component is ready to be uploaded to the cloud. Right-click the component tab and click `Close.` When prompted, save the component to the server. When asked for release notes, click Okay. 
+6. The component is ready to be uploaded to the cloud. Right-click the component tab and click `Close`. When prompted, save the component to the server. When asked for release notes, click Okay. 
 ![](/assets/onboarding/altium/library_management/mps_close.png)
 ![](/assets/onboarding/altium/library_management/mps_save_to_server.png)
 ![](/assets/onboarding/altium/library_management/mps_release.png)
@@ -148,7 +148,7 @@ Here's the following steps to import a component using SnapEDA. We will be using
 
 Ultra Librarian is another online component library that can export files for Altium. We often find quality issues with the files provided by Ultra Librarian. At this stage, we recommend considering making the [component from scratch](https://www.altium.com/documentation/altium-designer/creating-new-component).  
 
-Here's the following steps to import a component using Ultra Librarian. We will be using an [Analog Devices Flyback Regular (MAX17690ATE+T)](https://www.digikey.com/short/q23ftm3v) for this example.
+Here's the following steps to import a component using Ultra Librarian. We will be using an [Analog Devices Flyback Regulator (MAX17690ATE+T)](https://www.digikey.com/short/q23ftm3v) for this example.
 
 1. Go to [app.ultralibrarian.com](https://app.ultralibrarian.com) and search for your component. Once at the component page, click the `Download Now` button. Select the 3D step and Altium Designer files.
     ![](/assets/onboarding/altium/library_management/ul_download.png)

@@ -10,11 +10,11 @@ Plug the charger into a 120v 20A circuit. Attach the battery connector to the ve
 
 !!! warning
 
-    The PFC-2500 must be mounted in a valid orientation to ensure proper operation while charging. The best orientation is wehn the cooling fins are vertical with open space above and below them. Mounting the charger on a metal wall or frame will provide additional conductive cooling and also ground the frame. 
+    The PFC-2500 must be mounted in a valid orientation to ensure proper operation while charging. The best orientation is when the cooling fins are vertical with open space above and below them. Mounting the charger on a metal wall or frame will provide additional conductive cooling and also ground the frame. 
 
 ## LED Charge State 
 
-The charger state led is located on the longer side of the Eclon PFC-2500 surrounded by a red, yellow, and green label. The state of the led is represented by the following statuses: 
+The charger state led is located on the longer side of the Elcon PFC-2500 surrounded by a red, yellow, and green label. The state of the led is represented by the following statuses: 
 
 | LED State | Description |
 | --------- | ----------- |

@@ -17,6 +17,7 @@ nav:
       - Git: onboarding/git.md
       - Altium:
         - onboarding/altium/index.md
+        - Library Management: onboarding/altium/library_management.md
       - Terminology: onboarding/terminology.md
       - Tasks: onboarding/tasks.md
     - Hardware:
@@ -45,6 +46,9 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
+  - md_in_html
+  - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true 
-
+plugins:
+  - glightbox

@@ -142,25 +142,49 @@ Here's the following steps to import a component using SnapEDA. We will be using
 1. Navigate to the folder that you set for SnapEDA. There should be two files there with the same part number as the component.
     ![](/assets/onboarding/altium/library_management/snapeda_folder.png)
 
-Remember where these files are stored, and move on to [Step 5 - Upload Component to Altium 365](#step-5-upload-component-to-altium-365).
+1. Remember where these files are stored, and move on to [Step 5 - Upload Component to Altium 365](#step-5-upload-component-to-altium-365).
 
 ### Step 4 - Check Ultra Librarian
 
 Ultra Librarian is another online component library that can export files for Altium. We often find quality issues with the files provided by Ultra Librarian. At this stage, we recommend considering making the [component from scratch](https://www.altium.com/documentation/altium-designer/creating-new-component).  
 
+Here's the following steps to import a component using Ultra Librarian. We will be using an [Analog Devices Flyback Regular (MAX17690ATE+T)](https://www.digikey.com/short/q23ftm3v) for this example.
 
+1. Go to [app.ultralibrarian.com](https://app.ultralibrarian.com) and search for your component. Once at the component page, click the `Download Now` button. Select the 3D step and Altium Designer files.
+    ![](/assets/onboarding/altium/library_management/ul_download.png)
+    ![](/assets/onboarding/altium/library_management/ul_download_select.png)
+2. Once downloaded, extract the files to a temporary folder.
+    ![](/assets/onboarding/altium/library_management/ul_folder.png)
+3. Open Altium Designer, and click `Edit -> Run Script`. Once open, click browse, select file and navigate to `[Temp folder]/Altium Designer/[date]/*.PrjScr`. Open it and then click run.
+    ![](/assets/onboarding/altium/library_management/ul_script_to_run.png)
+    ![](/assets/onboarding/altium/library_management/ul_script_explorer.png)
+    ![](/assets/onboarding/altium/library_management/ul_script_to_run_okay.png)
+4. At the window, select the `File...` button, and navigate to `[Temp folder]/Altium Designer/[date]/*.txt`. Click okay, then click `Start Import`. At the prompt, click Okay to silence the warning.
+    ![](/assets/onboarding/altium/library_management/ul_import_prompt.png)
+    ![](/assets/onboarding/altium/library_management/ul_import_prompt_explorer.png)
+    ![](/assets/onboarding/altium/library_management/ul_prompt_start.png)
+
+    ![](/assets/onboarding/altium/library_management/ul_prompt_approve.png)
+    
+5. Navigate to `[Temp folder]/Altium Designer/[date]`. The `*.PcbLib` and `*.SchLib` files should be visible. These will be necessary for the next step.
+
+    ![](/assets/onboarding/altium/library_management/ul_folder_post_import.png)
+
+6. Remember where these files are stored, and move on to [Step 5 - Upload Component to Altium 365](#step-5-upload-component-to-altium-365).
 
 ### Step 5 - Upload Component to Altium 365
 
 1. Open Library Importer, navigate to the folder with the component files, and select the two files with the corresponding part name.
+
     ![](/assets/onboarding/altium/library_management/snapeda_library_importer.png)
     ![](/assets/onboarding/altium/library_management/snapeda_imp_choose.png)
     ![](/assets/onboarding/altium/library_management/snapeda_imp_open.png)
+
 1. Set the type of the component, then click `Import`.
     ![](/assets/onboarding/altium/library_management/snapeda_imp_type.png)
     ![](/assets/onboarding/altium/library_management/snapeda_imp_import.png)
 
-!!! warning
+!!! abstract
 
     Imported files are often missing necessary data and models. The component imported using the method above must be re-edited in order to add the missing data.
 
@@ -181,6 +205,7 @@ Ultra Librarian is another online component library that can export files for Al
         * Select all checkboxes under parameters. We recommend you only select one datasheet since they are most likely duplicates of each other. Then click Okay.
 
             ![](/assets/onboarding/altium/library_management/confirm_part_choices_okay.png)
+    1. It is crucial that the part has a 3D model if possible. This is necessary for determing clearence with circuit boards as well as accurate renders. Altium can accept .stp, .step files as 3D models for components. If there is no 3D model and you don't have a 3D model website, try to find the model file from the component manufacturer's website. Follow this guide on [placing a 3D model on an altium footprint](https://support.snapeda.com/en/articles/3334285-how-to-import-a-3d-model-into-altium) for reference.
     1. The component is ready to be uploaded to the cloud. Right-click the component tab and click `Close.` When prompted, save the component to the server. When asked for release notes, click Okay. 
         ![](/assets/onboarding/altium/library_management/mps_close.png)
         ![](/assets/onboarding/altium/library_management/mps_save_to_server.png)

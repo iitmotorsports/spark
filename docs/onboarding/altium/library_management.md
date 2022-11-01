@@ -106,7 +106,7 @@ Here's the following steps to import a component. We will be using a [Rohm Semic
 4. The menu will prompt you to accept the component data. We recommend that you only select one datasheet from the list to avoid uploading more data than necessary. Click Okay.
 ![](/assets/onboarding/altium/library_management/mps_data.png)
 
-5. The Manufacturer Part Search will automatically fill out all of the necessary information. Unless any further changes are necessary, the component is ready to be uploaded. Right-Click the upper tab and click save, or use `Ctrl + S`. This will only save the component locally, **and not to the cloud**.
+5. The Manufacturer Part Search will automatically fill out all of the necessary information. Unless any further changes are necessary, the component is ready to be uploaded. Right-Click the upper tab and click save, or use ++ctrl+s++. This will only save the component locally, **and not to the cloud**.
 ![](/assets/onboarding/altium/library_management/mps_save.png)
 
 6. The component is ready to be uploaded to the cloud. Right-click the component tab and click `Close.` When prompted, save the component to the server. When asked for release notes, click Okay. 
@@ -118,6 +118,70 @@ Here's the following steps to import a component. We will be using a [Rohm Semic
 
 ### Step 3 - Check SnapEDA
 
+SnapEDA is a popular third-party component library. SnapEDA has an extensive catalog of parts for companies like TE Connectivity and Amphenol. If the [Check Manufacturer Part Search](#step-2-check-manufacturer-part-search) doesn't have the component, we check SnapEDA for the part next.
+
+!!! note
+
+    Make sure you have the directory you set for SnapEDA in the [Install Component Helpers](#install-component-helpers) step ready as it'll be necessary here.
+    
+Here's the following steps to import a component using SnapEDA. We will be using a [TE Connectivity 2 Position Header (5-103635-1)](https://www.digikey.com/short/499mq44m) for this example.
+
+!!! warning
+
+    If the component does not have the semiconductor and footprint symbol **both** illuminated, then the part does not have the data necessary to make the component. Move onto [Step 4 - Check Ultra Librarian](#step-4-check-ultra-librarian).
+
+1. Open the `SnapEDA` panel and search for the desired component. 
+    ![](/assets/onboarding/altium/library_management/snapeda.png)
+    ![](/assets/onboarding/altium/library_management/snapeda_search.png)
+
+1. Download the component to your local computer. It is imperitive that you download the part instead of placing it. If the part is placed directly, then it won't be uploaded to the Altium 365 cloud.    
+    ![](/assets/onboarding/altium/library_management/snapeda_download.png)
+    ![](/assets/onboarding/altium/library_management/snapeda_savepart.png)
+    ![](/assets/onboarding/altium/library_management/snapeda_atl.png)
+
+1. Navigate to the folder that you set for SnapEDA. There should be two files there with the same part number as the component.
+    ![](/assets/onboarding/altium/library_management/snapeda_folder.png)
+
+Remember where these files are stored, and move on to [Step 5 - Upload Component to Altium 365](#step-5-upload-component-to-altium-365).
+
 ### Step 4 - Check Ultra Librarian
 
+Ultra Librarian is another online component library that can export files for Altium. We often find quality issues with the files provided by Ultra Librarian. At this stage, we recommend considering making the [component from scratch](https://www.altium.com/documentation/altium-designer/creating-new-component).  
+
+
+
 ### Step 5 - Upload Component to Altium 365
+
+1. Open Library Importer, navigate to the folder with the component files, and select the two files with the corresponding part name.
+    ![](/assets/onboarding/altium/library_management/snapeda_library_importer.png)
+    ![](/assets/onboarding/altium/library_management/snapeda_imp_choose.png)
+    ![](/assets/onboarding/altium/library_management/snapeda_imp_open.png)
+1. Set the type of the component, then click `Import`.
+    ![](/assets/onboarding/altium/library_management/snapeda_imp_type.png)
+    ![](/assets/onboarding/altium/library_management/snapeda_imp_import.png)
+
+!!! warning
+
+    Imported files are often missing necessary data and models. The component imported using the method above must be re-edited in order to add the missing data.
+
+    Follow these steps to add conclusive component data:
+    
+    1. Go to the `Components` panel and search for the component you just uploaded. Right click on the component and click Edit.
+        ![](/assets/onboarding/altium/library_management/confirm_edit.png)
+    1. Check the Part Choices box. If this is empty:
+
+        * Click the add button.
+
+            ![](/assets/onboarding/altium/library_management/confirm_part_choices.png)
+
+        * Find the correct part data from the list. Altium should automatically search for the part number, but manual searching may be necessary in certain cases.
+
+            ![](/assets/onboarding/altium/library_management/confirm_part_choices_select.png)
+
+        * Select all checkboxes under parameters. We recommend you only select one datasheet since they are most likely duplicates of each other. Then click Okay.
+
+            ![](/assets/onboarding/altium/library_management/confirm_part_choices_okay.png)
+    1. The component is ready to be uploaded to the cloud. Right-click the component tab and click `Close.` When prompted, save the component to the server. When asked for release notes, click Okay. 
+        ![](/assets/onboarding/altium/library_management/mps_close.png)
+        ![](/assets/onboarding/altium/library_management/mps_save_to_server.png)
+        ![](/assets/onboarding/altium/library_management/mps_release.png)

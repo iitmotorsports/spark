@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Noah Husby" name="author"/>
+<link href="../" rel="prev"/>
+<link href="../../terminology/" rel="next"/>
+<link href="../../../assets/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.1" name="generator"/>
+<title>Library Management - ⚡ Spark Book ⚡</title>
+<link href="../../../assets/stylesheets/main.3bd4f189.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="" data-md-color-primary="red" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#altium-library-management">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="⚡ Spark Book ⚡" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="⚡ Spark Book ⚡">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            ⚡ Spark Book ⚡
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Library Management
+            
+          </span>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/iitmotorsports/spark" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    iitmotorsports/spark
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--integrated" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="⚡ Spark Book ⚡" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="⚡ Spark Book ⚡">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    ⚡ Spark Book ⚡
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/iitmotorsports/spark" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    iitmotorsports/spark
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../">Onboarding</a>
+<label for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Onboarding" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Onboarding
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../git/">
+        Git
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../">Altium</a>
+<label for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Altium" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Altium
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Library Management
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Library Management
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-component-helpers">
+    Install Component Helpers
+  </a>
+<nav aria-label="Install Component Helpers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-snapeda">
+    Install SnapEDA
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-to-find-upload-and-use-components">
+    How to Find, Upload, and Use components
+  </a>
+<nav aria-label="How to Find, Upload, and Use components" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-check-components-panel">
+    Step 1 - Check Components Panel
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-check-manufacturer-part-search">
+    Step 2 - Check Manufacturer Part Search
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-check-snapeda">
+    Step 3 - Check SnapEDA
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-check-ultra-librarian">
+    Step 4 - Check Ultra Librarian
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-5-upload-component-to-altium-365">
+    Step 5 - Upload Component to Altium 365
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../terminology/">
+        Terminology
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tasks/">
+        Tasks
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          Hardware
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Hardware" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Hardware
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1">
+          Battery
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Battery" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+          Battery
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../hardware/battery/elcon-pfc2500/">
+        Elcon PFC-2500
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Circuits
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Circuits" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Circuits
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../circuits/3.3_5_scale/">
+        3.3V to 5V Analog Scale
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../circuits/temp_monitor/">
+        Temperature Monitor
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          Concepts
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Concepts" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Concepts
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../concepts/can_bus/">
+        CANbus
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+          Resources
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Resources" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Resources
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://drive.google.com/file/d/1qqfPue71dBHfSWaDCWYXdfh6THUAw-8l/view">
+        Formula Hybrid Rules
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://drive.google.com/file/d/1JXlojLxfPoChLREt0dhdBYNLLnxnM2-f/view">
+        Formula Electric Rules
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../resources/standardization/">
+        Standardizations
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="altium-library-management">Altium Library Management</h1>
+<p>IIT Motorsports keeps an extensive catalog of parts for our schematics and PCBs. To ensure accurate circuit design and board production, it is imperitive that the data for these parts is entered correctly. We use the standardizations and instructions as listed below in order to maintain our parts library.</p>
+<p>We store all of our parts in our <a href="https://www.altium.com/altium-365">Altium 365</a> cloud instance. This reduces the dependency on manually shared libraries for our contributors. All libraries are automatically synchronized between Altium instances.</p>
+<p>Our components are split up into the following categories:</p>
+<details class="info">
+<summary>Component Categories</summary>
+<ul>
+<li>Audio</li>
+<li>Batteries</li>
+<li>Capacitors</li>
+<li>Connectors</li>
+<li>Crystals &amp; Oscillators</li>
+<li>Data Converters</li>
+<li>Diodes</li>
+<li>Fuses</li>
+<li>Inductors</li>
+<li>Integrated Circuits<ul>
+<li>Amplifiers</li>
+<li>Clock &amp; Timing</li>
+<li>Drivers</li>
+<li>Interface</li>
+<li>Logic</li>
+<li>Memory</li>
+<li>Power Supply</li>
+<li>Processors</li>
+<li>Wireless</li>
+</ul>
+</li>
+<li>LED</li>
+<li>Logics</li>
+<li>Mechanical</li>
+<li>Microcontrollers</li>
+<li>Miscellaneous</li>
+<li>Optoelectronics</li>
+<li>Radio &amp; RF</li>
+<li>Relays</li>
+<li>Resistors</li>
+<li>Switches</li>
+<li>Test Points</li>
+<li>Transformers</li>
+<li>Transistors</li>
+</ul>
+</details>
+<h2 id="install-component-helpers">Install Component Helpers</h2>
+<p>We get the majority of our components from the Manufacturer Part Search (formerly Altium Content Vault). We use alternate component libraries when the part is not in the altium vault.</p>
+<p>We use the following methods to retrieve components for Altium:</p>
+<ul>
+<li>Manufacturer Part Search (Recommended)</li>
+<li><a href="https://snapeda.com">SnapEDA</a></li>
+<li><a href="https://www.ultralibrarian.com">Ultra Librarian</a></li>
+</ul>
+<p>In order to make downloading components from SnapEDA and Ultra Librarian easy, we recommend installing the import tool for these libraries.</p>
+<h3 id="install-snapeda">Install SnapEDA</h3>
+<ol>
+<li>Exit Altium Designer.</li>
+<li>Grab SnapEDA Altium Plugin from <a href="https://www.snapeda.com/plugins/">https://www.snapeda.com/plugins/</a>.</li>
+<li>Unzip the file.</li>
+<li>Run the <code>.exe</code> installer.</li>
+<li>Once installed, run Altium Designer and open SnapEDA using the button at the top.
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda.png"/></a></li>
+<li>Sign in to SnapEDA.</li>
+<li>Open settings and change the library path to a known folder. You'll need to navigate to this folder each time you import a part from SnapEDA. We recommend: <code>{your_user}/Documents/SnapEDAImport</code>.
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_settings.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_settings.png"/></a></li>
+</ol>
+<h2 id="how-to-find-upload-and-use-components">How to Find, Upload, and Use components</h2>
+<p>In order to find components, we use the following method:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/component_flowchart.svg"><img alt="" src="/assets/onboarding/altium/library_management/component_flowchart.svg"/></a></p>
+<h3 id="step-1-check-components-panel">Step 1 - Check Components Panel</h3>
+<p>The components panel represents all components that we've used and uploaded to our Altium 365 instance. This should be the first place you check for components. Any component that is created must be added to the components bin in order to be properly synced and used for all projects.</p>
+<ul>
+<li>Make sure that the IIT Motorsports Altium 365 instance is active by clicking the cloud icon in the upper-right hand corner.</li>
+<li>Ensure that the box above the search bar is set to <code>All</code> which will automatically pull components from the Altium 365 instance.</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/components_panel.png"><img alt="" src="/assets/onboarding/altium/library_management/components_panel.png"/></a></p>
+<p>✅ If the part is found, then it can be dragged into the active project and you're done.</p>
+<p>❌ If the part is not found, then move onto <a href="#step-2-check-manufacturer-part-search">Step 2 - Check Manufacturer Part Search</a></p>
+<h3 id="step-2-check-manufacturer-part-search">Step 2 - Check Manufacturer Part Search</h3>
+<p>The manufacturer part search is an integrated component library solution that allows you to easily import popular components into Altium. </p>
+<p>Here's the following steps to import a component. We will be using a <a href="https://www.digikey.com/short/58dwr87b">Rohm Semiconductor RED SMD LED</a> for this example.</p>
+<ol>
+<li>Open the <code>Manufacturer Part Search</code> panel and search for the desired component. The green semiconductor symbol next to the component indicates whether it has a symbol and footprint available which is required to make the component.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the component does not have the green semiconductor symbol, then the part does not have the data necessary to make the component. Move onto <a href="#step-3-check-snapeda">Step 3 - Check SnapEDA</a>.</p>
+</div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_search.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_search.png"/></a></p>
+<ol>
+<li>
+<p>Click the arrow next to download, then select <code>Acquire...</code>.
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_acquire.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_acquire.png"/></a></p>
+</li>
+<li>
+<p>Select the type of the component. For this example, we'll be adding the component to the LED category.
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_type.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_type.png"/></a></p>
+</li>
+<li>
+<p>The menu will prompt you to accept the component data. We recommend that you only select one datasheet from the list to avoid uploading more data than necessary. Click Okay.
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_data.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_data.png"/></a></p>
+</li>
+<li>
+<p>The Manufacturer Part Search will automatically fill out all of the necessary information. Unless any further changes are necessary, the component is ready to be uploaded. Right-Click the upper tab and click save, or use <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-s">S</kbd></span>. This will only save the component locally, <strong>and not to the cloud</strong>.
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_save.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_save.png"/></a></p>
+</li>
+<li>
+<p>The component is ready to be uploaded to the cloud. Right-click the component tab and click <code>Close</code>. When prompted, save the component to the server. When asked for release notes, click Okay. 
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_close.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_close.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_save_to_server.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_save_to_server.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_release.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_release.png"/></a></p>
+</li>
+</ol>
+<p>✅ The part has been successfully added and saved to the cloud. The component can be added <strong>from the components bin</strong> into the active project and you're done!</p>
+<h3 id="step-3-check-snapeda">Step 3 - Check SnapEDA</h3>
+<p>SnapEDA is a popular third-party component library. SnapEDA has an extensive catalog of parts for companies like TE Connectivity and Amphenol. If the <a href="#step-2-check-manufacturer-part-search">Check Manufacturer Part Search</a> doesn't have the component, we check SnapEDA for the part next.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure you have the directory you set for SnapEDA in the <a href="#install-component-helpers">Install Component Helpers</a> step ready as it'll be necessary here.</p>
+</div>
+<p>Here's the following steps to import a component using SnapEDA. We will be using a <a href="https://www.digikey.com/short/499mq44m">TE Connectivity 2 Position Header (5-103635-1)</a> for this example.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the component does not have the semiconductor and footprint symbol <strong>both</strong> illuminated, then the part does not have the data necessary to make the component. Move onto <a href="#step-4-check-ultra-librarian">Step 4 - Check Ultra Librarian</a>.</p>
+</div>
+<ol>
+<li>
+<p>Open the <code>SnapEDA</code> panel and search for the desired component. 
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_search.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_search.png"/></a></p>
+</li>
+<li>
+<p>Download the component to your local computer. It is imperitive that you download the part instead of placing it. If the part is placed directly, then it won't be uploaded to the Altium 365 cloud.  <br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_download.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_download.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_savepart.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_savepart.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_atl.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_atl.png"/></a></p>
+</li>
+<li>
+<p>Navigate to the folder that you set for SnapEDA. There should be two files there with the same part number as the component.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_folder.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_folder.png"/></a></p>
+</li>
+<li>
+<p>Remember where these files are stored, and move on to <a href="#step-5-upload-component-to-altium-365">Step 5 - Upload Component to Altium 365</a>.</p>
+</li>
+</ol>
+<h3 id="step-4-check-ultra-librarian">Step 4 - Check Ultra Librarian</h3>
+<p>Ultra Librarian is another online component library that can export files for Altium. We often find quality issues with the files provided by Ultra Librarian. At this stage, we recommend considering making the <a href="https://www.altium.com/documentation/altium-designer/creating-new-component">component from scratch</a>.  </p>
+<p>Here's the following steps to import a component using Ultra Librarian. We will be using an <a href="https://www.digikey.com/short/q23ftm3v">Analog Devices Flyback Regulator (MAX17690ATE+T)</a> for this example.</p>
+<ol>
+<li>Go to <a href="https://app.ultralibrarian.com">app.ultralibrarian.com</a> and search for your component. Once at the component page, click the <code>Download Now</code> button. Select the 3D step and Altium Designer files.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_download.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_download.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_download_select.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_download_select.png"/></a></li>
+<li>Once downloaded, extract the files to a temporary folder.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_folder.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_folder.png"/></a></li>
+<li>Open Altium Designer, and click <code>Edit -&gt; Run Script</code>. Once open, click browse, select file and navigate to <code>[Temp folder]/Altium Designer/[date]/*.PrjScr</code>. Open it and then click run.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_script_to_run.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_script_to_run.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_script_explorer.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_script_explorer.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_script_to_run_okay.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_script_to_run_okay.png"/></a></li>
+<li>
+<p>At the window, select the <code>File...</code> button, and navigate to <code>[Temp folder]/Altium Designer/[date]/*.txt</code>. Click okay, then click <code>Start Import</code>. At the prompt, click Okay to silence the warning.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_import_prompt.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_import_prompt.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_import_prompt_explorer.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_import_prompt_explorer.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_prompt_start.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_prompt_start.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_prompt_approve.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_prompt_approve.png"/></a></p>
+</li>
+<li>
+<p>Navigate to <code>[Temp folder]/Altium Designer/[date]</code>. The <code>*.PcbLib</code> and <code>*.SchLib</code> files should be visible. These will be necessary for the next step.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/ul_folder_post_import.png"><img alt="" src="/assets/onboarding/altium/library_management/ul_folder_post_import.png"/></a></p>
+</li>
+<li>
+<p>Remember where these files are stored, and move on to <a href="#step-5-upload-component-to-altium-365">Step 5 - Upload Component to Altium 365</a>.</p>
+</li>
+</ol>
+<h3 id="step-5-upload-component-to-altium-365">Step 5 - Upload Component to Altium 365</h3>
+<ol>
+<li>
+<p>Open Library Importer, navigate to the folder with the component files, and select the two files with the corresponding part name.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_library_importer.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_library_importer.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_imp_choose.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_imp_choose.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_imp_open.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_imp_open.png"/></a></p>
+</li>
+<li>
+<p>Set the type of the component, then click <code>Import</code>.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_imp_type.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_imp_type.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/snapeda_imp_import.png"><img alt="" src="/assets/onboarding/altium/library_management/snapeda_imp_import.png"/></a></p>
+</li>
+</ol>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>Imported files are often missing necessary data and models. The component imported using the method above must be re-edited in order to add the missing data.</p>
+<p>Follow these steps to add conclusive component data:</p>
+<ol>
+<li>Go to the <code>Components</code> panel and search for the component you just uploaded. Right click on the component and click Edit.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/confirm_edit.png"><img alt="" src="/assets/onboarding/altium/library_management/confirm_edit.png"/></a></li>
+<li>
+<p>Check the Part Choices box. If this is empty:</p>
+<ul>
+<li>
+<p>Click the add button.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/confirm_part_choices.png"><img alt="" src="/assets/onboarding/altium/library_management/confirm_part_choices.png"/></a></p>
+</li>
+<li>
+<p>Find the correct part data from the list. Altium should automatically search for the part number, but manual searching may be necessary in certain cases.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/confirm_part_choices_select.png"><img alt="" src="/assets/onboarding/altium/library_management/confirm_part_choices_select.png"/></a></p>
+</li>
+<li>
+<p>Select all checkboxes under parameters. We recommend you only select one datasheet since they are most likely duplicates of each other. Then click Okay.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/confirm_part_choices_okay.png"><img alt="" src="/assets/onboarding/altium/library_management/confirm_part_choices_okay.png"/></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>It is crucial that the part has a 3D model if possible. This is necessary for determing clearence with circuit boards as well as accurate renders. Altium can accept .stp, .step files as 3D models for components. If there is no 3D model and you don't have a 3D model website, try to find the model file from the component manufacturer's website. Follow this guide on <a href="https://support.snapeda.com/en/articles/3334285-how-to-import-a-3d-model-into-altium">placing a 3D model on an altium footprint</a> for reference.</p>
+</li>
+<li>The component is ready to be uploaded to the cloud. Right-click the component tab and click <code>Close.</code> When prompted, save the component to the server. When asked for release notes, click Okay. 
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_close.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_close.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_save_to_server.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_save_to_server.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/assets/onboarding/altium/library_management/mps_release.png"><img alt="" src="/assets/onboarding/altium/library_management/mps_release.png"/></a></li>
+</ol>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2022 IIT Motorsports
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/iitmotorsports" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://instagram.com/iitmotorsports" rel="noopener" target="_blank" title="instagram.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["toc.integrate", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.5cf534bf.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

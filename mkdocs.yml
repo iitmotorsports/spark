@@ -28,6 +28,7 @@ nav:
         - Temperature Monitor: circuits/temp_monitor.md
     - Concepts:
         - CANbus: concepts/can_bus.md
+    - Component Almanac: component_almanac.md
     - Resources:
       - Formula Hybrid Rules: https://drive.google.com/file/d/1qqfPue71dBHfSWaDCWYXdfh6THUAw-8l/view
       - Formula Electric Rules: https://drive.google.com/file/d/1JXlojLxfPoChLREt0dhdBYNLLnxnM2-f/view

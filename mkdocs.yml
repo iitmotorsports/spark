@@ -3,13 +3,17 @@ site_author: 'Noah Husby'
 docs_dir: docs/
 repo_name: 'iitmotorsports/spark'
 repo_url: 'https://github.com/iitmotorsports/spark'
-copyright: Copyright &copy; 2022 IIT Motorsports
+copyright: Copyright &copy; 2024 IIT Motorsports
 extra:
     social:
     - icon: fontawesome/brands/github
       link: https://github.com/iitmotorsports
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/iitmotorsports
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/iitmotorsports/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/iitmotorsports/
 nav:
     - Home: index.md
     - Onboarding:
@@ -56,6 +60,9 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 plugins:
   - glightbox
   - search

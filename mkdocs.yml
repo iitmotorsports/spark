@@ -16,17 +16,17 @@ extra:
       link: https://www.linkedin.com/company/iitmotorsports/
 nav:
     - Home: index.md
-    - Onboarding:
-      - onboarding/index.md
-      - Git: onboarding/git.md
-      - Altium:
-        - onboarding/altium/index.md
-        - Library Management: onboarding/altium/library_management.md
-      - Terminology: onboarding/terminology.md
-      - Tasks: onboarding/tasks.md
     - Structures:
       - Fasteners: structures/fasteners.md
     - Energetics:
+      - Onboarding:
+        - energetics/onboarding/index.md
+        - Git: energetics/onboarding/git.md
+        - Altium:
+          - energetics/onboarding/altium/index.md
+          - Library Management: energetics/onboarding/altium/library_management.md
+        - Terminology: energetics/onboarding/terminology.md
+        - Tasks: energetics/onboarding/tasks.md
       - Hardware:
         - Charger:
           - Elcon PFC-2500: energetics/hardware/charger/elcon-pfc2500.md

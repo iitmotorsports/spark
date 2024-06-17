@@ -23,8 +23,8 @@ Download the `.exe` file for Altium Designer from their download page.
 
 After installing Altium Designer, open the program and navigate to the upper-right hand user menu and select `Licenses`. If you aren't already signed in, click `Sign In`.
 
-![](/assets/onboarding/altium/altium_license_management.png)
+![](/assets/energetics/onboarding/altium/altium_license_management.png)
 
 Once logged in, Altium Designer will display all licenses associated with the AltiumLive account. Select the active license and click use. 
 
-![](/assets/onboarding/altium/altium_license_use.png)
+![](/assets/energetics/onboarding/altium/altium_license_use.png)

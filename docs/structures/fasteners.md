@@ -9,6 +9,9 @@ In an effort to reduce and simplify the hardware used on the vehicle, the team h
 ## Hex Cap Screw
 {{ read_csv('docs/assets/structures/fasteners_hex.csv') }}
 
+## Socket Head Cap 
+{{ read_csv('docs/assets/structures/fasteners_socket.csv') }}
+
 ## Solidworks Toolbox - Mapping
 
 The team maintains it's own fastener library using Solidworks Toolbox & PDM. Solidworks uses different names and standards to identify hardware. A non-exhaustive mapping of Solidworks Toolbox parts to hardware can be found below.

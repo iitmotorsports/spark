@@ -49,6 +49,7 @@ theme:
   features:
     - toc.integrate 
     - navigation.indexes 
+    - navigation.sections
   palette: 
     primary: red
     scheme: slate
@@ -71,3 +72,8 @@ plugins:
   - glightbox
   - search
   - table-reader
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: iitmotorsports/spark
+      branch: main

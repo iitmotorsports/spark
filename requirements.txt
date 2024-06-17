@@ -1,2 +1,4 @@
 mkdocs-glightbox
 mkdocs-table-reader-plugin
+mkdocs-git-revision-date-localized-plugin
+mkdocs-git-committers-plugin-2

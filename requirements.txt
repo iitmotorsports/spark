@@ -1,1 +1,2 @@
 mkdocs-glightbox
+mkdocs-table-reader-plugin

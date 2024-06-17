@@ -20,6 +20,8 @@ nav:
         - Library Management: onboarding/altium/library_management.md
       - Terminology: onboarding/terminology.md
       - Tasks: onboarding/tasks.md
+    - Structures:
+      - Fasteners: structures/fasteners.md
     - Hardware:
       - Battery:
         - Elcon PFC-2500: hardware/battery/elcon-pfc2500.md
@@ -55,3 +57,5 @@ markdown_extensions:
       alternate_style: true 
 plugins:
   - glightbox
+  - search
+  - table-reader

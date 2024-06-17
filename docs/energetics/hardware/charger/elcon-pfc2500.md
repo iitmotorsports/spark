@@ -2,7 +2,7 @@
 
 The Elcon PFC-2500 is used to charge the internal battery pack of our electric vehicles. 
 
-![](/assets/hardware/battery/elcon-pfc2500.png)
+![](/assets/energetics/hardware/charger/elcon-pfc2500.png)
 
 ## Operation
 
@@ -28,7 +28,7 @@ The charger state led is located on the longer side of the Elcon PFC-2500 surrou
 
 The charger can be configured to communicate with the BMS over relay or [CAN bus](https://en.wikipedia.org/wiki/CAN_bus) control. Our charger is configured to use relay control which will activate the charger if the trigger circuit is closed. In order to trigger the charger, Pin 1 (Enable) must be connected to Pin 3 (12V). The use of a relay connected to the BMS is advised to ensure proper operation of the charger.
 
-![](/assets/hardware/battery/elcon_pinout.png)
+![](/assets/energetics/hardware/charger/elcon_pinout.png)
 
 !!! warning
 

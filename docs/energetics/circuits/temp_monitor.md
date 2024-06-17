@@ -19,7 +19,7 @@ Example: When the temperature in an area is needed to avoid overheating this wou
 
 ## Pins
 
-![](/assets/circuits/tmp112_q1.png)
+![](/assets/energetics/circuits/tmp112_q1.png)
 
 | Pin No. | Pin Name | I/O | Description |
 | ------- | -------- | --- | ----------- |
@@ -34,7 +34,7 @@ Example: When the temperature in an area is needed to avoid overheating this wou
 
 <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
 <div class="altium-ecad-viewer"
-  data-project-src="https://spark.docs.iitmotorsports.org/assets/circuits/temperature_monitor.zip"
+  data-project-src="https://spark.docs.iitmotorsports.org/assets/energetics/circuits/temperature_monitor.zip"
   style="border-radius: 0px 0px 4px 4px; height: 500px;
          border-style: solid; border-width: 1px;
          border-color: rgb(241, 241, 241);

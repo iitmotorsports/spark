@@ -4,7 +4,7 @@
 
 CAN(Controller Area Network) is a bus used most commonly in vehicles designed to allow microcontrollers and devices to communicate with each other without a host computer. All microcontrollers and devices all connect to a CAN transceiver then every transceiver is connected to the a twisted pair of wires. All communicaation happens on the two wires and you can have as many devices as you want. CAN allows you to do a form of filtering where every message has a address assigned before sending that only a device or microcontroller that has the same "mask" will read it. It is highly recommended that you make it asynchronous/inturupt based to allow faster reaction/transfer of info.
 
-![](/assets/concepts/can_bus_frame.svg)
+![](/assets/energetics/concepts/can_bus_frame.svg)
 
 Example: Communication of logging messages or state data from one microcontroller to another microcontroller.
 
@@ -12,9 +12,9 @@ Example: Communication of logging messages or state data from one microcontrolle
 
 In this example we will be using two [Teensy 3.6](https://www.pjrc.com/store/teensy36.html). These are nice because they have specific pins that are capable of working with the transceiver without the library having to do much. Two CAN transceivers are also needed a good one is [SN65HVD230](https://www.waveshare.com/sn65hvd230-can-board.htm). 
 
-![](/assets/concepts/teensy36.jpg)
+![](/assets/energetics/concepts/teensy36.jpg)
 
-![](/assets/concepts/waveform.jpg)
+![](/assets/energetics/concepts/waveform.jpg)
 
 ## Library
 

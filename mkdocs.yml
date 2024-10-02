@@ -41,7 +41,7 @@ nav:
           - CANbus: energetics/concepts/can_bus.md
     - Resources:
       - Formula Hybrid Rules: https://drive.google.com/file/d/1qqfPue71dBHfSWaDCWYXdfh6THUAw-8l/view
-      - Formula Electric Rules: https://drive.google.com/file/d/1JXlojLxfPoChLREt0dhdBYNLLnxnM2-f/view
+      - Formula Electric Rules: https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=4bafd174-62da-48b6-b016-589385ca5ae6
       - Standardizations: resources/standardization.md
 theme:
   name: 'material'

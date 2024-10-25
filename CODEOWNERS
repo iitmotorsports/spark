@@ -1,0 +1,6 @@
+# Spark Book
+.gitignore @iitmotorsports/documentation
+mkdocs.yml @iitmotorsports/documentation
+requirements.txt @iitmotorsports/documentation
+/.github/ @iitmotorsports/documentation
+/docs/ @iitmotorsports/documentation

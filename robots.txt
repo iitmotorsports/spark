@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://spark.docs.iitmotorsports.org/sitemap.xml

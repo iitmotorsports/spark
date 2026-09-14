@@ -4,7 +4,7 @@ site_url: https://spark.docs.iitmotorsports.org
 docs_dir: docs/
 repo_name: 'iitmotorsports/spark'
 repo_url: 'https://github.com/iitmotorsports/spark'
-copyright: Copyright &copy; 2024 IIT Motorsports
+copyright: Copyright &copy; 2026 IIT Motorsports
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -41,8 +41,10 @@ nav:
       - Concepts:
           - CANbus: energetics/concepts/can_bus.md
     - Resources:
-      - Formula Hybrid Rules: https://drive.google.com/file/d/1qqfPue71dBHfSWaDCWYXdfh6THUAw-8l/view
-      - Formula Electric Rules: https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=4bafd174-62da-48b6-b016-589385ca5ae6
+      - Rulebooks:
+        - FSAE Rules 2027 (Draft): assets/resources/rulebooks/FSAE_Rules_2027_V0_DRAFT_public_comments.pdf
+        - Previous Rules:
+          - FSAE Rules 2026: assets/resources/rulebooks/FSAE_Rules_2026_V1.pdf
       - Standardizations: resources/standardization.md
 theme:
   name: 'material'

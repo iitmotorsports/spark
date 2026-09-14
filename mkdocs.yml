@@ -39,6 +39,8 @@ nav:
           - 3.3V to 5V Analog Scale: energetics/circuits/3.3_5_scale.md
           - Temperature Monitor: energetics/circuits/temp_monitor.md
       - Concepts:
+          - STM32:
+            - Timer Input Capture: energetics/concepts/stm32/timer_input_capture.md
           - CANbus: energetics/concepts/can_bus.md
     - Resources:
       - Rulebooks:
@@ -53,6 +55,9 @@ theme:
     - toc.integrate 
     - navigation.indexes 
     - navigation.sections
+    - content.code.copy
+    - content.code.select
+
   palette: 
     primary: red
     scheme: slate
@@ -71,6 +76,14 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
 plugins:
   - glightbox
   - search
@@ -80,3 +93,9 @@ plugins:
   - git-committers:
       repository: iitmotorsports/spark
       branch: main
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
